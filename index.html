@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="assets/vendors/splide-4.0.2/dist/css/splide.min.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="top-header ">
+                <p class="d-lg-block d-none">Creating quality hand made curtains since 2000
+                <p>
+                <div class="top-header-icons">
+                    <p>samples(0)</p>
+                    <div class="icons-div">
+                        <a href="#">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M23,20 L23,6 L12,15 L1,6 L1,20 L23,20 Z M12,12 L22,4 L2,4 L12,12 Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="icons-div">
+                        <a href="#">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="icons-div">
+                        <a href="#">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="icons-div last">
+                        <a href="#">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="bottom-header">
+                <div class="logo">
+                    <figure>
+                        <img src="images/copper-curtains-header.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="search-wrap d-lg-flex d-none">
+                    <button>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em"
+                            width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                            </path>
+                        </svg>
+                    </button>
+                    <input type="search" name="" id="" placeholder="Search our extensive range...">
+                </div>
+                <div class="header-contact-wrap ">
+                    <div class="call-wrap d-lg-flex d-none">
+                        <img src="images/phone.png" alt="">
+                        <div class="info">
+                            <p>Need Help</p>
+                            <a href="tel:99999999999">+91-999-999-9999</a>
+                        </div>
+                    </div>
+                    <figure class="d-lg-flex d-none">
+                        <img src="images/user.png" alt="">
+                    </figure>
+                    <figure class="cart">
+                        <div class="input">
+                            0
+                        </div>
+                        <img src="images/cart.png" alt="">
+                    </figure>
+                    <div class="d-lg-none d-flex pl-4 sm-icons">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="d-lg-none d-flex pl-4 sm-icons">
+                        <button id="menu-btn">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul class="nav-list">
+                    <li class="made-to-measure nav-list-item"><a href="">Made To Measure</a>
+                        <div class="hover-list">
+                            <div class="top-list">
+                                <div class="row w-100">
+                                    <div class="col-lg-3 ">
+                                        <div class="properties">
+                                            <img src="images/shield.png" alt="">
+                                            <span>10 years Guarantee</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 ">
+                                        <div class="properties">
+                                            <img src="images/truck.png" alt="">
+                                            <span>Free postage and packing</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 ">
+                                        <div class="properties">
+                                            <img src="images/curtains.png" alt="">
+                                            <span>Free sample availble</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3  ">
+                                        <div class="properties py-2">
+                                            <img src="images/info-(2).png" alt="">
+                                            <span>Visit our help</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-list">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <p>Browse by Color</p>
+                                        <ul>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <p>Browse by Style</p>
+                                        <ul>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <p>Browse by Fabric Type</p>
+                                        <ul>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <p>Browse by Material</p>
+                                        <ul>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                            <li><a href="">White & Cream</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-list-item"><a href="">Roman Blinds</a></li>
+                    <li class="nav-list-item"><a href="">roller Blinds</a></li>
+                    <li class="nav-list-item"><a href="">Sheer & voils</a></li>
+                    <li class="nav-list-item"><a href="">Ready Made</a></li>
+                    <li class="nav-list-item"><a href="">Fabrics</a></li>
+                    <li class="nav-list-item"><a href="">Rods And Track</a></li>
+                    <li class="nav-list-item"><a href="">Bedding</a></li>
+                    <li class="nav-list-item"><a href="">Cushions</a></li>
+                    <li class="nav-list-item"><a href="">Accesories</a></li>
+                    <li class="nav-list-item"><a href="">Tailor & Fittings</a></li>
+                    <li class="nav-list-item"><a href="">Brands</a></li>
+                    <li class="nav-list-item"><a href="">Help Hub</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="banner pt-1">
+            <div class="row m-0">
+                <div class="col-lg-8 p-lg-2 px-2">
+                    <div class="shop-1">
+                        <figure>
+                            <img src="images/shop1.jpg" alt="">
+                        </figure>
+                        <div class="heading">
+                            <h2>We Make Your Space Look Fresh And Modern</h2>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, maxime?</span>
+                        </div>
+                        <a class="shop-now-btn" href="">Shop Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 pb-lg-2 p-0">
+                    <div class="row m-0 h-100">
+                        <div class="col-lg-12 pr-lg-0 px-2">
+                            <div class="shop-2 pt-2 h-100">
+                                <figure>
+                                    <img src="images/shop2.jpg" alt="">
+                                </figure>
+                                <div class="heading">
+                                    <h2>We Make Your Space Look Fresh And Modern</h2>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, maxime?</span>
+                                </div>
+                                <a class="shop-now-btn" href="">Shop Now</a>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 pr-lg-0 px-2">
+                            <div class="shop-2 pt-2 h-100">
+                                <figure>
+                                    <img src="images/shop3.jpg" alt="">
+                                </figure>
+                                <div class="heading">
+                                    <h2>We Make Your Space Look Fresh And Modern</h2>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, maxime?</span>
+                                </div>
+                                <a class="shop-now-btn" href="">Shop Now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 pr-lg-0 px-2">
+                            <div class="shop-2 pt-2 h-100">
+                                <figure>
+                                    <img src="images/shop4.jpg" alt="">
+                                </figure>
+                                <div class="heading">
+                                    <h2>We Make Your Space Look Fresh And Modern</h2>
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, maxime?</span>
+                                </div>
+                                <a class="shop-now-btn" href="">Shop Now</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="product pt-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 p-lg-2 py-1 pr-0 h-100 w-100">
+                        <div class="scale-img">
+                            <a href="">
+                                <div class="product-div">
+                                    <figure>
+                                        <img src="images/Measure-curtain.jpg" alt="">
+                                    </figure>
+                                    <a href="" class="custom-btn">Made To Measure Curtains</a>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 p-lg-2 py-1 pr-0 h-100 w-100">
+                        <div class="scale-img">
+                            <a href="">
+                                <div class="product-div">
+                                    <figure>
+                                        <img src="images/ready-made-home-page.jpg" alt="">
+                                    </figure>
+                                    <a href="" class="custom-btn">Readymade Curtains</a>
+                                </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-12 p-lg-2 py-1 pr-0 h-100 w-100">
+                        <div class="scale-img">
+                            <a href="">
+                                <div class="product-div">
+                                    <figure>
+                                        <img src="images/roman-blinds-home-page.jpg" alt="">
+                                    </figure>
+                                    <a href="" class="custom-btn">Roman Blinds</a>
+                                </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-12 p-lg-2 py-1 pr-0 h-100 w-100">
+                        <div class="scale-img">
+                            <a href="">
+                                <div class="product-div">
+                                    <figure>
+                                        <img src="images/roller-blinds-home-page.jpg" alt="">
+                                    </figure>
+                                    <a href="" class="custom-btn">Roller Blinds</a>
+                                </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-12 p-lg-2 py-1 pr-0 h-100 w-100">
+                        <div class="scale-img">
+                            <a href="">
+                                <div class="product-div">
+                                    <figure>
+                                        <img src="images/fabrics-home-page.jpg" alt="">
+                                    </figure>
+                                    <a href="" class="custom-btn">Fabrics</a>
+                                </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-12 p-lg-2 py-1 pr-0 h-100 w-100">
+                        <div class="scale-img">
+                            <a href="">
+                                <div class="product-div">
+                                    <figure>
+                                        <img src="images/sheer.jpg" alt="">
+                                    </figure>
+                                    <a href="" class="custom-btn">Sheer & Voils</a>
+                                </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-12 p-lg-2 py-1 pr-0 h-100 w-100">
+                        <div class="scale-img">
+                            <a href="">
+                                <div class="product-div">
+                                    <figure>
+                                        <img src="images/rods-tracks-home-page.jpg" alt="">
+                                    </figure>
+                                    <a href="" class="custom-btn">Made To Measure Curtains</a>
+                                </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-12 p-lg-2 py-1 pr-0 h-100 w-100">
+                        <div class="scale-img">
+                            <a href="">
+                                <div class="product-div">
+                                    <figure>
+                                        <img src="images/Accessories.jpg" alt="">
+                                    </figure>
+                                    <a href="" class="custom-btn">Made To Measure Curtains</a>
+                                </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-12 p-lg-2 py-1 pr-0 h-100 w-100">
+                        <div class="scale-img">
+                            <a href="">
+                                <div class="product-div">
+                                    <figure>
+                                        <img src="images/cushions-home-page.jpg" alt="">
+                                    </figure>
+                                    <a href="" class="custom-btn">Made To Measure Curtains</a>
+                                </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-12 p-lg-2 py-1 pr-0 h-100 w-100">
+                        <div class="scale-img">
+                            <a href="">
+                                <div class="product-div">
+                                    <figure>
+                                        <img src="images/bedding-home-page.jpg" alt="">
+                                    </figure>
+                                    <a href="" class="custom-btn">Made To Measure Curtains</a>
+                                </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-12 p-lg-2 py-1 pr-0 h-100 w-100">
+                        <div class="scale-img">
+                            <a href="">
+                                <div class="product-div">
+                                    <figure>
+                                        <img src="images/Branding.jpg" alt="">
+                                    </figure>
+                                    <a href="" class="custom-btn">Made To Measure Curtains</a>
+                                </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-12 p-lg-2 py-1 pr-0 h-100 w-100">
+                        <div class="scale-img">
+                            <a href="">
+                                <div class="product-div">
+                                    <figure>
+                                        <img src="images/Taylor.jpg" alt="">
+                                    </figure>
+                                    <a href="" class="custom-btn">Made To Measure Curtains</a>
+                                </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recommended-product">
+            <div class="container">
+
+                <div class="heading center">
+                    <h2>Recommended Product</h2>
+                </div>
+                <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="product-card">
+                                    <figure>
+                                        <img src="images/slider.png" alt="">
+                                    </figure>
+                                    <p>
+                                        Lupien,Samphire
+                                    </p>
+                                    <div class="price-rating">
+                                        <div class="pricing">
+                                            <span>from</span>
+                                            <span class="price"> ₹648</span>
+                                        </div>
+                                        <div class="rating">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            (0)
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-card">
+                                    <figure>
+                                        <img src="images/slider1.jpg" alt="">
+                                    </figure>
+                                    <p>
+                                        Lupien,Samphire
+                                    </p>
+                                    <div class="price-rating">
+                                        <div class="pricing">
+                                            <span>from</span>
+                                            <span class="price"> ₹648</span>
+                                        </div>
+                                        <div class="rating">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            (0)
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-card">
+                                    <figure>
+                                        <img src="images/slider2.jpg" alt="">
+                                    </figure>
+                                    <p>
+                                        Lupien,Samphire
+                                    </p>
+                                    <div class="price-rating">
+                                        <div class="pricing">
+                                            <span>from</span>
+                                            <span class="price"> ₹648</span>
+                                        </div>
+                                        <div class="rating">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            (0)
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="product-card">
+                                    <figure>
+                                        <img src="images/slider3.jpg" alt="">
+                                    </figure>
+                                    <p>
+                                        Lupien,Samphire
+                                    </p>
+                                    <div class="price-rating">
+                                        <div class="pricing">
+                                            <span>from</span>
+                                            <span class="price"> ₹648</span>
+                                        </div>
+                                        <div class="rating">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 24 24" height="1em" width="1em"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                                <path
+                                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                                </path>
+                                            </svg>
+                                            (0)
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-img-div">
+                            <figure>
+                                <img src="images/about3.jpg" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-info">
+                            <span>About</span>
+                            <h2>Quality Blinds And Curtains From Copper Curtains</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum alias aperiam neque
+                                praesentium nobis molestiae sed eaque, tempora earum vero odio ad suscipit eos omnis,
+                                corrupti nulla eligendi soluta sapiente!</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum alias aperiam neque
+                                praesentium nobis molestiae sed eaque, tempora earum vero odio ad suscipit eos omnis,
+                                corrupti nulla eligendi soluta sapiente!</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum alias aperiam neque
+                                praesentium nobis molestiae sed eaque, tempora earum vero odio ad suscipit eos omnis,
+                                corrupti nulla eligendi soluta sapiente!</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="properties">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 pt-lg-0">
+                        <div class="properties-div">
+                            <figure>
+                                <img src="images/warranty.png" alt="">
+                            </figure>
+                            <h5>10 Years Warranty</h5>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pt-lg-0">
+                        <div class="properties-div">
+                            <figure>
+                                <img src="images/standards.png" alt="">
+                            </figure>
+                            <h5>High Standards</h5>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pt-lg-0">
+                        <div class="properties-div">
+                            <figure>
+                                <img src="images/samples.png" alt="">
+                            </figure>
+                            <h5>Free Sample</h5>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="help-hub">
+            <div class="container">
+                <div class="help-hub-div">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="help-hub-info">
+                                <span>Help Hub</span>
+                                <h4>Do you need any help?</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae dolore fuga
+                                    numquam nemo nisi inventore obcaecati autem fugiat natus esse?</p>
+                                <a href="">Read More</a>
+                            </div>
+                            <div class="articles">
+                                <span>Popular Articles</span>
+                                <div class="row">
+                                    <div class="col-lg-6 col-12 p-lg-0 py-4">
+                                        <div class="blog-card">
+                                            <figure>
+                                                <img src="images/article1.jpg" alt="">
+                                            </figure>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+                                                consectetur. Adipisci fugiat voluptate iure, accusamus alias minima
+                                                soluta incidunt id.</p>
+
+                                            <a href="">Read Article</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12 p-lg-0 py-4">
+                                        <div class="blog-card">
+                                            <figure>
+                                                <img src="images/article1.jpg" alt="">
+                                            </figure>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+                                                consectetur. Adipisci fugiat voluptate iure, accusamus alias minima
+                                                soluta incidunt id.</p>
+
+                                            <a href="">Read Article</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <a data-fancybox="video-gallery" href="videos/How to Fit Roman Blinds - CurtainsCurtainsCurtains.mp4" data-width="640" data-height="360">
+                                <img src="images/videos.jpg" />
+                              </a>
+                            <span>How to measure for Eyelet Headed Curtains ?</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hidden-menu" class=" menu p-0">
+            <div class="menu-div">
+                <div class="top-menu">
+                    <figure>
+                        <img src="images/copper-curtains-header.jpg" alt="">
+                    </figure>
+                    <button id="close-btn">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path></svg>
+
+                    </button>
+                </div>
+                <div class="bottom-menu">
+                    <div class="search-wrap mx-auto mt-2">
+                        <button id="close-btn">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em"
+                                width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                                </path>
+                            </svg>
+                        </button>
+                        <input type="search" name="" id="" placeholder="Search our extensive range...">
+                    </div>
+                    <ul class="bottom-nav-list">
+                        <li class="made-to-measure nav-list-item"><a href="">Made To Measure</a>
+                        </li>
+                        <li class="nav-list-item"><a href="">Roman Blinds</a></li>
+                        <li class="nav-list-item"><a href="">roller Blinds</a></li>
+                        <li class="nav-list-item"><a href="">Sheer & voils</a></li>
+                        <li class="nav-list-item"><a href="">Ready Made</a></li>
+                        <li class="nav-list-item"><a href="">Fabrics</a></li>
+                        <li class="nav-list-item"><a href="">Rods And Track</a></li>
+                        <li class="nav-list-item"><a href="">Bedding</a></li>
+                        <li class="nav-list-item"><a href="">Cushions</a></li>
+                        <li class="nav-list-item"><a href="">Accesories</a></li>
+                        <li class="nav-list-item"><a href="">Tailor & Fittings</a></li>
+                        <li class="nav-list-item"><a href="">Brands</a></li>
+                        <li class="nav-list-item"><a href="">Help Hub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="top-footer">
+            <div class="row pt-5">
+                <div class="col-lg-4">
+                    <div class="footer-info">
+                        <figure>
+                            <img src="images/copper-curtains-footer.jpg" alt="">
+                        </figure>
+                        <p>Lorem ipsum, dolor sit amet consectetur  elit. Id esse nobis deleniti ab adipisicing nulla ipsam dolorum rem non unde quisquam!</p>
+                        <p class="contacts">Phone: <a href="">+91 999 999 9999</a> </p>
+                        <p class="contacts">Email: <a href="">support@coppercurtains.com</a> </p>
+                        <p class="contacts"><a href="">www.coppercurtains.com</a> </p>
+                        <div class="social-media">
+                            <a href="">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                            </a>
+                            <a href="">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-3 col-6 pt-lg-0 pt-4">
+                            <div class="footer-list">
+                                <p>Company</p>
+                                <ul>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="">Terms & Condition</a></li>
+                                    <li><a href="">Cookie Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 pt-lg-0 pt-4">
+                            <div class="footer-list">
+                                <p>Service</p>
+                                <ul>
+                                    <li><a href="">Delivry Time & Charges</a></li>
+                                    <li><a href="">Direct Payment</a></li>
+                                    <li><a href="">Website Feedback</a></li>
+                                    <li><a href="">Help Hub</a></li>
+                                    <li><a href="">Help Hub Videos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 pt-lg-0 pt-4">
+                            <div class="footer-list">
+                                <p>Account</p>
+                                <ul>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="">Terms & Condition</a></li>
+                                    <li><a href="">Cookie Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 pt-lg-0 pt-4">
+                            <div class="footer-list">
+                                <p>Support</p>
+                                <ul>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="">Terms & Condition</a></li>
+                                    <li><a href="">Cookie Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mid-footer">
+                <div class="row">
+                    <div class="col-lg-4 pt-lg-0 pt-4">
+                        <div class="footer-properties">
+                            <div class="footer-icons">
+                                <img src="images/freedelivery.jpg" alt="">
+                            </div>
+                            <div class="prop-text">
+                                <p>Free Delivery</p>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pt-lg-0 pt-4">
+                        <div class="footer-properties">
+                            <div class="footer-icons">
+                                <img src="images/dayreturn.jpg" alt="">
+                            </div>
+                            <div class="prop-text">
+                                <p>30 Days return & Guarantee</p>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pt-lg-0 pt-4">
+                        <div class="footer-properties">
+                            <div class="footer-icons">
+                                <img src="images/support.jpg" alt="">
+                            </div>
+                            <div class="prop-text">
+                                <p>24/7 Online</p>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>©2022 Copper CCurtains.All Right Reserved.Designed by <a target="_blank" href="https://www.ideamagix.com/">Ideamagix</a></p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="assets/vendors/splide-4.0.2/dist/js/splide.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
